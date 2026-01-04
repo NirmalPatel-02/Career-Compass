@@ -1,0 +1,58 @@
+{
+  "logical_thinking": [
+    0,
+    2
+  ],
+  "numerical_thinking": [
+    0,
+    2
+  ],
+  "verbal_thinking": [
+    0,
+    2
+  ],
+  "visual_thinking": [
+    0,
+    2
+  ],
+  "likes_coding": [
+    0,
+    1
+  ],
+  "likes_data": [
+    0,
+    1
+  ],
+  "likes_design": [
+    0,
+    1
+  ],
+  "likes_business": [
+    0,
+    1
+  ],
+  "likes_writing": [
+    0,
+    1
+  ],
+  "likes_security": [
+    0,
+    1
+  ],
+  "people_oriented": [
+    0,
+    1
+  ],
+  "system_oriented": [
+    0,
+    1
+  ],
+  "research_oriented": [
+    0,
+    1
+  ],
+  "risk_tolerance": [
+    0,
+    2
+  ]
+}

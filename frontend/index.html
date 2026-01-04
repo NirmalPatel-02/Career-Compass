@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillPath AI | Oracle</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-glow"></div>
+
+    <main class="main-container">
+        <div id="domain-screen" class="screen">
+            <h1 class="logo">SKILLPATH<span>AI</span></h1>
+            <p class="tagline">Select a knowledge universe to begin</p>
+            
+            <div class="domain-grid">
+                <div class="domain-card active" onclick="showSetup()">
+                    <div class="card-icon">💻</div>
+                    <div class="card-text">
+                        <h3>Information Technology</h3>
+                        <p>Code, Data, AI & Infrastructure</p>
+                    </div>
+                </div>
+                
+                <div class="domain-card disabled">
+                    <div class="card-icon">⚖️</div>
+                    <div class="card-text">
+                        <h3>Legal & Law</h3>
+                        <p>Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="setup-screen" class="screen hidden">
+            <div class="oracle-visual">
+                <div class="pulse-core"></div>
+            </div>
+            <div class="speech-bubble" id="oracle-msg-setup"></div>
+            <div class="answer-stack">
+                <button class="action-btn" onclick="start(0)">
+                    <strong>Beginner</strong>
+                    <span>I'm new to the world of IT</span>
+                </button>
+                <button class="action-btn" onclick="start(1)">
+                    <strong>Professional</strong>
+                    <span>I have a technical background</span>
+                </button>
+            </div>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="oracle-visual">
+                <div class="pulse-core thinking"></div>
+            </div>
+            <div class="speech-bubble" id="q-text"></div>
+            <div id="btns" class="answer-stack"></div>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h2 class="verdict-title">Oracle Verdict</h2>
+            <div id="podium" class="results-podium"></div>
+            <div class="explanation-panel">
+                <h4>Why this fits:</h4>
+                <div id="reasons-list"></div>
+            </div>
+            <button class="reset-btn" onclick="location.reload()">Reset Session</button>
+        </div>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
